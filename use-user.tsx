@@ -24,28 +24,28 @@ export const UserProvider = ({ children }) => {
   }, [])
 
   const markAsFavorite = (id: number) => {
-    const index = favoritesIds.findIndex((favorite) => favorite === id)
+    const index = favoritesIds?.findIndex((favorite) => favorite === id)
+    let updatedFavorites
 
     if (index > -1) {
-      const clone = [...favoritesIds]
-      clone.splice(index, 1)
-      
-      setFavoriteIds(clone)
-      saveFavorites(clone)
+      updatedFavorites = [...favoritesIds]
+      updatedFavorites.splice(index, 1)
     } else {
-      setFavoriteIds([...favoritesIds, id])
-      saveFavorites([...favoritesIds, id])
+      updatedFavorites = favoritesIds ? [...favoritesIds, id] : [id]
     }
+
+      setFavoriteIds(updatedFavorites)
+      saveFavorites(updatedFavorites)
   }
 
   
 
   const loadFavorites = () => {
-    // can be replaced with server,
-    // mimic an xhr with setTimeout...
+    // can be replaced with server, currently mimic an xhr with setTimeout...
     setTimeout(() => {
       const favorites = localStorage.getItem(FAVORITES_STORAGE_KEY)
       const parsed = JSON.parse(favorites)
+      
       if (parsed) {
         setFavoriteIds(parsed)
       }

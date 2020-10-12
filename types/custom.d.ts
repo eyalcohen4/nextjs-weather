@@ -2,7 +2,7 @@ interface City {
   name: string
   id: number
   slug: string
-  country: string;
+  country: string
   coordinates: Coords
 }
 
@@ -12,15 +12,13 @@ interface Coords {
 }
 
 interface Weather {
-  current: CurrentWeather
-}
-
-interface CurrentWeather {
-  weather_icons: string[]
-  weather_descriptions: string
-  wind_speed: number
-  humidity: number
-  temperature: number
+  main: {
+    humidity: number
+    temp: number
+  }
+  wind: {
+    speed: number
+  }
 }
 
 interface UserContextState {
