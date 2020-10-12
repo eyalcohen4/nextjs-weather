@@ -1,3 +1,13 @@
+# Next.js Sample Weather App
+
+## What's included
+- Static /city/<name> route created at build time (static)
+- Current weather fetched client side from [weatherstack.com](weatherstack.com) based on city name in the URL (slug)
+- Home page with all available cities
+- user can add favorite city, save it on local-storage, load it on browser
+- render content based on mobile/desktop screen size
+
+---
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "New York",
+    "id": 1,
+    "country": "USA",
+    "coordinates": {
+      "long": "40.7128",
+      "lat": "74.0060"
+    },
+    "slug": "new_york"
+  },
+  {
+    "name": "Tel Aviv",
+    "id": 2,
+    "country": "Israel",
+    "coordinates": {
+      "long": "32.0853",
+      "lat": "34.7818"
+    },
+    "slug": "tel_aviv"
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "id": 3,
+    "coordinates": {
+      "long": "43.6532",
+      "lat": "79.3832"
+    },
+    "slug": "toronto"
+  },  
+  {
+    "name": "Paris",
+    "country": "France",
+    "id": 4,
+    "coordinates": {
+      "long": "48.8566",
+      "lat": "2.3522"
+    },
+    "slug": "paris"
+  },
+    {
+      "name": "Milano",
+      "country": "Italy",
+      "id": 5,
+      "coordinates": {
+        "long": "45.4642",
+        "lat": "9.1900"
+      },
+      "slug": "milano"
+    }
+]

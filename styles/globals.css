@@ -1,16 +1,51 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
+  color: #4287f5;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.city {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.city-weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.city-favorite-button {
+  border: none;
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.cities {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
+  grid-gap: 1em;
+  width: 100%;
+}
+
+.city-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
 }
